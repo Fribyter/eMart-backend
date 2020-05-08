@@ -13,5 +13,5 @@ Port: 8761
 
 ## Gateway Server Zuul  
 
-Gateway for microservies, it includes JWT and Role based Access.    
+Gateway for microservies, includes JWT and Role based Access 
 Port: 8093  
