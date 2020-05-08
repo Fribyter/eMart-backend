@@ -9,11 +9,11 @@ Frontend repo can be found from here: [eMart Angular](https://github.com/Fribyte
 ## Eureka Server
 
 Hosts eureka server
-＜/br＞
+
 Port: 8761  
 
 ## Gateway Server Zuul  
 
 Gateway for microservies, includes JWT and Role based Access 
-＜/br＞
+
 Port: 8093  
