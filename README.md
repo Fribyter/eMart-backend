@@ -1,4 +1,4 @@
-# eMart backend
+# EMart backend
 
 Springboot microservice repository for FSD that includes Eureka Server, Zuul Gatway with JWT and Role Based Access, Spring Cloud Config Server, Hystrix (Circuit Breaker) 
 
@@ -9,9 +9,11 @@ Frontend repo can be found from here: [eMart Angular](https://github.com/Fribyte
 ## Eureka Server
 
 Hosts eureka server
+＜/br＞
 Port: 8761  
 
 ## Gateway Server Zuul  
 
 Gateway for microservies, includes JWT and Role based Access 
+＜/br＞
 Port: 8093  
