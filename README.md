@@ -8,7 +8,7 @@ Frontend repo can be found from here: [eMart Angular](https://github.com/Fribyte
 
 ## How to start
 
-In order to run this entire backend repo you will need to start each application by the order: `Eureka Server > Gateway Server Zuul > Hystrix Dashboard > Buyer service > Seller service` 
+Get the mysql schema file from [schema.sql](https://github.com/Fribyter/eMart-backend/blob/master/schema.sql) and then get testing data from [data.sql](https://github.com/Fribyter/eMart-backend/blob/master/data.sql), in order to run this entire backend repo you will need to start each application by the order: `Eureka Server > Gateway Server Zuul > Hystrix Dashboard > Buyer service > Seller service` 
 
 ## Eureka Server
 
