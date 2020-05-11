@@ -1,12 +1,12 @@
-# EMart backend
+# EMart Backend
 
 Springboot microservice repository for FSD that includes eureka server, Zuul gatway with JWT and role based access, Hystrix (Circuit Breaker) 
 
-## Frontend application written in Angular 9:  
+## Frontend Application Written In Angular 9:  
 
 Frontend repo can be found from here: [eMart Angular](https://github.com/Fribyter/eMart-angular)
 
-## How to start
+## How To Start
 
 Get the mysql schema file from [schema.sql](https://github.com/Fribyter/eMart-backend/blob/master/schema.sql) and then get testing data from [data.sql](https://github.com/Fribyter/eMart-backend/blob/master/data.sql), in order to run this entire backend repo you will need to start each application by the order: `Eureka Server > Gateway Server Zuul > Hystrix Dashboard > Buyer service > Seller service` 
 
@@ -29,14 +29,14 @@ Provides alternate methods in case of circuit break
 Port: 8092
 
 
-## Buyer service
+## Buyer Service
 
 Custom service provides buyer related data
 
 Port: 8097
 
 
-## Seller service
+## Seller Service
 
 Custom service provides seller related data
 
