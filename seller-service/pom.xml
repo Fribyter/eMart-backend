@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>buyer-service</artifactId>
+	<artifactId>seller-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>buyer-service</name>
-	<description>eMart buyer service</description>
+	<name>seller-service</name>
+	<description>eMart seller service</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
