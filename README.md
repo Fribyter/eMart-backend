@@ -1,6 +1,6 @@
 # EMart backend
 
-Springboot microservice repository for FSD that includes Eureka Server, Zuul Gatway with JWT and Role Based Access, Spring Cloud Config Server, Hystrix (Circuit Breaker) 
+Springboot microservice repository for FSD that includes eureka server, Zuul gatway with JWT and role based access, Hystrix (Circuit Breaker) 
 
 ## Frontend application written in Angular 9:  
 
@@ -18,13 +18,13 @@ Port: 8761
 
 ## Gateway Server Zuul  
 
-Gateway for microservies, includes JWT and Role based Access 
+Gateway for microservies that includes JWT and role based access 
 
 Port: 8093  
 
 ## Hystrix Dashboard
 
-Provide alternate methods in case of circuit break
+Provides alternate methods in case of circuit break
 
 Port: 8092
 
