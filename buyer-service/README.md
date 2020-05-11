@@ -1,1 +1,1 @@
-# Employee Producer Service : Creates data for Employee Client Service
+# buyer service : provide data for buyers
