@@ -17,3 +17,23 @@ Port: 8761
 Gateway for microservies, includes JWT and Role based Access 
 
 Port: 8093  
+
+## Hystrix Dashboard
+
+Provide alternate methods in case of circuit break
+
+PORT: 8092
+
+
+## Buyer service
+
+Custom service that provides buyer related data
+
+PORT: 8097
+
+
+## Seller service
+
+Custom service that provides seller related data
+
+PORT: 8098
