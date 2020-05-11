@@ -6,6 +6,10 @@ Springboot microservice repository for FSD that includes Eureka Server, Zuul Gat
 
 Frontend repo can be found from here: [eMart Angular](https://github.com/Fribyter/eMart-angular)
 
+## How to start
+
+In order to run this entire backend repo you will need to start each application by the order: `Eureka Server > Gateway Server Zuul > Hystrix Dashboard > Buyer service > Seller service` 
+
 ## Eureka Server
 
 Hosts eureka server
