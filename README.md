@@ -18,7 +18,7 @@ Port: 8761
 
 ## Gateway Server Zuul  
 
-Gateway for microservies that includes spring security and JWT with role based access
+Gateway for microservies that includes spring security and JWT with role based access, token needed to access buyer, seller apis, please refer to README.MD in [gateway-server-zuul](https://github.com/Fribyter/eMart-backend/blob/master/gateway-server-zuul)
 
 Port: 8093  
 
