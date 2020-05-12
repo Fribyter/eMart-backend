@@ -17,4 +17,14 @@ public class ItemServiceImpl implements ItemService {
     public List<Item> findAll(Long userId) {
         return itemRepository.findAll(userId);
     }
+
+    @Override
+    public void save(Item item) {
+        this.itemRepository.saveAndFlush(item);
+    }
+
+    @Override
+    public void delete(Item item) {
+        this.itemRepository.delete(item);
+    }
 }

@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface ItemService {
     List<Item> findAll(Long userId);
+
+    void save(Item item);
+
+    void delete(Item item);
 }

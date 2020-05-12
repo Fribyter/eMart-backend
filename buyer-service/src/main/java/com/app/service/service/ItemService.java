@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface ItemService {
     List<Item> findAll();
+
+    List<Item> findByName(String name);
+
+    List<Item> findByPrice(double startPrice, double endPrice);
 }
