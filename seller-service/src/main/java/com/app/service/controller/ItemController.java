@@ -22,7 +22,7 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
-    @RequestMapping(value="/findAll/{userId}",method = RequestMethod.GET)
+    @RequestMapping(value = "/findAll/{userId}", method = RequestMethod.GET)
     @HystrixCommand(fallbackMethod = "getDefaultSearchResult")
     public List<Item> findAll(@PathVariable("userId") Long userId) {
         List<Item> items = itemService.findAll(userId);
