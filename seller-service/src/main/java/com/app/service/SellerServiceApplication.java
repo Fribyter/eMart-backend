@@ -13,9 +13,9 @@ import com.app.service.controller.ItemController;
 @EnableDiscoveryClient
 @ComponentScan(basePackageClasses = ItemController.class,basePackages="com.app.service")
 
-public class BuyerServiceApplication {
+public class SellerServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BuyerServiceApplication.class, args);
+		SpringApplication.run(SellerServiceApplication.class, args);
 	}
 }

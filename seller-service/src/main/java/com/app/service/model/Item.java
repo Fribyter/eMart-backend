@@ -19,6 +19,9 @@ public class Item {
 	@Column(name = "CATEGORY_ID")
 	private Long categoryId;
 
+	@Column(name = "USER_ID")
+	private Long userId;
+
 	@Column(name = "PRICE")
 	private double price;
 
@@ -66,5 +69,13 @@ public class Item {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 }

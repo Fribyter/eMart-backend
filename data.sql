@@ -19,9 +19,12 @@ INSERT INTO USER_AUTHORITY (USER_ID, AUTHORITY_ID) VALUES (2, 2);
 truncate table emart.`CATEGORY`;
 INSERT INTO emart.CATEGORY
 (NAME, DETAIL)
-VALUES('phone', 'category for phone');
+VALUES('electronic', 'category for electronic');
 
 truncate table emart.`ITEM`;
 INSERT INTO emart.ITEM
-(CATEGORY_ID, PRICE, NAME, DESCRIPTION)
-VALUES(1, 23.3, 'phone', 'this is a phone');
+(CATEGORY_ID, USER_ID, PRICE, NAME, DESCRIPTION)
+VALUES(1, 2, 23.3, 'phone', 'this is a phone');
+INSERT INTO emart.ITEM
+(CATEGORY_ID, USER_ID, PRICE, NAME, DESCRIPTION)
+VALUES(1, 2, 73.3, 'laptop', 'this is a laptop');

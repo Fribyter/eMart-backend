@@ -5,5 +5,5 @@ import com.app.service.model.Item;
 import java.util.List;
 
 public interface ItemService {
-    List<Item> findAll();
+    List<Item> findAll(Long userId);
 }
