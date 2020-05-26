@@ -10,4 +10,6 @@ public interface ItemService {
     List<Item> findByName(String name);
 
     List<Item> findByPrice(double startPrice, double endPrice);
+
+    Item findById(Long id);
 }

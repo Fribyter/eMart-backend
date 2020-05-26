@@ -16,5 +16,4 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 
     @Query("from Item i where i.price between :startPrice and :endPrice")
     List<Item> findByPrice(@Param("startPrice") double startPrice, @Param("endPrice") double endPrice);
-
 }

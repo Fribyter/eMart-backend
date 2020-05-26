@@ -27,4 +27,9 @@ public class ItemServiceImpl implements ItemService {
     public List<Item> findByPrice(double startPrice, double endPrice) {
         return itemRepository.findByPrice(startPrice, endPrice);
     }
+
+    @Override
+    public Item findById(Long id) {
+        return itemRepository.findById(id).orElse(new Item());
+    }
 }
