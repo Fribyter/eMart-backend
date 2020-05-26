@@ -27,6 +27,7 @@ security:
       enable : false
 
 zuul:
+  ignoredPatterns: /signup/**, /heartbeat/**, /sso/**
   routes:
     buyer:
       path: /buyer/**

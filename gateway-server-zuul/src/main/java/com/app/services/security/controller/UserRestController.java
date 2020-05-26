@@ -1,18 +1,16 @@
 package com.app.services.security.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.app.services.model.User;
+import com.app.services.security.JwtTokenUtil;
+import com.app.services.security.JwtUser;
+import com.app.services.security.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import com.app.services.security.JwtTokenUtil;
-import com.app.services.security.JwtUser;
+import javax.servlet.http.HttpServletRequest;
 
 @CrossOrigin
 @RestController
@@ -28,6 +26,9 @@ public class UserRestController {
     @Qualifier("jwtUserDetailsService")
     private UserDetailsService userDetailsService;
 
+    @Autowired
+    UserService userService;
+
     @RequestMapping(value = "user", method = RequestMethod.GET)
     public JwtUser getAuthenticatedUser(HttpServletRequest request) {
         String token = request.getHeader(tokenHeader).substring(7);
@@ -36,4 +37,8 @@ public class UserRestController {
         return user;
     }
 
+    @RequestMapping(value = "/signUp", method = RequestMethod.POST)
+    public void signUp(@RequestBody User user) {
+        userService.save(user);
+    }
 }

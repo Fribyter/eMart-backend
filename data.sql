@@ -5,7 +5,7 @@ VALUES('buyer1', '$2a$04$Vbug2lwwJGrvUXTj6z7ff.97IzVBkrJ1XfApfGNl.Z695zqcnPYra',
 
 INSERT INTO emart.`USER`
 (USERNAME, PASSWORD, `TYPE`, EMAIL, MOBILE, COMPANY, CREATE_DATE, ENABLED, LAST_PASSWORD_RESET_DATE)
-VALUES('seller1', '$2a$04$Vbug2lwwJGrvUXTj6z7ff.97IzVBkrJ1XfApfGNl.Z695zqcnPYra', 0, '1', '1', '1', '2020-05-08', 1, '2020-05-08');
+VALUES('seller1', '$2a$04$Vbug2lwwJGrvUXTj6z7ff.97IzVBkrJ1XfApfGNl.Z695zqcnPYra', 1, '1', '1', '1', '2020-05-08', 1, '2020-05-08');
 
 truncate table emart.`AUTHORITY`;
 INSERT INTO AUTHORITY (ID, NAME) VALUES (1, 'ROLE_USER');
